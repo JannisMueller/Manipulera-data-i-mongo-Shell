@@ -3,11 +3,11 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
 
 
 1. Använd en databas med namn myDB.
-  ```
+   ```
    use myDB
    
    switched to db myDB
-  ```
+   ```
 
 2. Skapa ett dokument med innehåll FirstName: ”Selma”, LastName: Lagerlöf och sätt in det i en kollektion med namn ”authors”.
 
@@ -66,10 +66,10 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
 
 9.  Lägg till en array ”Books” för Selma Lagerlöf med följande böcker: ”Gösta Berlings saga”, ”En herrgårdsägen”, ”Nils Holgerssons underbara resa genom Sverige” 
 
-   ```
-   db.authors.updateOne({FirstName : "Selma", LastName: "Lagerlöf"} ,{ $set: {Books: ["Gösta Berlings saga","En herrgårdsägen","Nils Holgerssons undabara resor genom Sverige"]}})
-   { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
-   ```
+    ```
+    db.authors.updateOne({FirstName : "Selma", LastName: "Lagerlöf"} ,{ $set: {Books: ["Gösta Berlings saga","En herrgårdsägen","Nils Holgerssons undabara resor       genom Sverige"]}})
+    { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+    ```
 
 10. Lägg till boken ”Vi på Saltkråkan” bland Astrid Lindgrens böcker. 
 
@@ -167,9 +167,9 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
 
 18. Ta bort dokumenten där FirstName = ”August”
 
-```
-db.authors.remove({FirstName: "August"})
+    ```
+    db.authors.remove({FirstName: "August"})
 
-WriteResult({ "nRemoved" : 2 })
-```
+    WriteResult({ "nRemoved" : 2 })
+    ```
 
