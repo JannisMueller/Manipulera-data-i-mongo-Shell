@@ -94,9 +94,9 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
 
 13.  Räkna hur många författare som dog på 1940-talet. 
 
-    ```
-    db.authors.find({$and: [{Death: {$gte: 1940}},{Death: {$lt: 1950}}]} ).pretty()
-    {
+     ```
+     db.authors.find({$and: [{Death: {$gte: 1940}},{Death: {$lt: 1950}}]} ).pretty()
+     {
     	"_id" : ObjectId("5ffeb4054a48c2bcdf8104ae"),
     	"FirstName" : "Selma",
     	"LastName" : "Lagerlöf",
@@ -107,8 +107,8 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
     		"En herrgårdsägen",
     		"Nils Holgerssons undabara resor genom Sverige"
     	]
-    }
-    {
+     }
+     {
     	"_id" : ObjectId("5ffeb4744a48c2bcdf8104b1"),
     	"FirstName" : "Hjalmar",
     	"LastName" : "Söderberg",
@@ -119,8 +119,8 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
     		"Martin Bircks ungdom",
     		"Doktor Glas"
     	]
-    }
-    {
+     }
+     {
     	"_id" : ObjectId("5ffeb4744a48c2bcdf8104b2"),
     	"FirstName" : "Karin",
     	"LastName" : "Boye",
@@ -130,9 +130,9 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
     		"Samlade dikter",
     		"Kallocain"
     	]
-    }
+     }
     
-    ```
+     ```
 
 14. Visa endast attributen FirstName, LastName och Death för de författare som dog på 1940-talet. 
 
