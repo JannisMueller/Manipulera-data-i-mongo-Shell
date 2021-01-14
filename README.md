@@ -45,24 +45,24 @@ Denna repository innehåller min lösning för Labb 3 (kurs "Utveckling mot data
 
 6.  Räkna hur många dokument det finns totalt i ”authors”.
 
-   ```
-   db.authors.count()
-   6
-   ```
+    ```
+    db.authors.count()
+    6
+    ```
 
 7.  Räkna hur många författare som heter August i förnamn.
 
-   ```
-   db.authors.count( { FirstName : "August" } )
-   2
-   ```
+    ```
+    db.authors.count( { FirstName : "August" } )
+    2
+    ```
 
 8.  Lägg till Birth: 1858 och Death: 1940 för Selma Lagerlöf
 
-   ```
-   db.authors.updateOne({FirstName : "Selma", LastName: "Lagerlöf"} ,{ $set: {Birth: 1858, Death: 1940}})
-   { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
-   ```
+    ```
+    db.authors.updateOne({FirstName : "Selma", LastName: "Lagerlöf"} ,{ $set: {Birth: 1858, Death: 1940}})
+    { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+    ```
 
 9.  Lägg till en array ”Books” för Selma Lagerlöf med följande böcker: ”Gösta Berlings saga”, ”En herrgårdsägen”, ”Nils Holgerssons underbara resa genom Sverige” 
 
